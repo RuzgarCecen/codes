@@ -1,0 +1,35 @@
+import tkinter as tk
+from tkinter import ttk
+
+window = tk.Tk()
+window.geometry("300x300")
+
+
+def buttonFunction():
+    print("here")
+    m =method.get()
+    if m =="1" :
+        print("method1")
+        
+
+
+button = tk.Button(window,text= "button", activebackground="red", bg ="black",
+                   fg = "white", activeforeground= "black",
+                   height= 15,width=50,command = buttonFunction)
+button.grid(row = 0, column= 0 , pady=15)
+
+#radio button
+method = tk.StringVar()
+tk.Radiobutton(window, text= "method 1:", value = "1",activebackground="red",
+               bg="green",height= 5,width=5,borderwidth=15, variable=method).grid(row = 1, column= 0)
+
+tk.Radiobutton(window, text= "method 2:", value = "2", variable= method).grid(row = 1, column= 1)
+
+
+
+
+
+
+
+
+window.mainloop()
