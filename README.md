@@ -7,6 +7,7 @@ Software Engineering student interested in backend development and algorithms.
 - Spring Boot, Flask
 - Git, Docker, PostgreSQL
 - ## Projects
+- CampusBAUconnect
 - REST API Project
 - Algorithm Visualizer
 
