@@ -1,0 +1,20 @@
+import tkinter as tk
+from tkinter import ttk
+
+def apply_font():
+    size = int(size_var.get())
+    label1.configure(font=("Arial", size, "normal")) # bold italic
+
+win = tk.Tk()
+win.geometry("300x200")
+win.title("Week 4")
+
+size_var = tk.StringVar(value="12")
+spin_size = tk.Spinbox(win, from_=8, to=48, increment=1, textvariable=size_var, width=5, command=apply_font)
+spin_size.pack(pady=5)
+
+label1 = ttk.Label(win, text="Preview Text")
+label1.pack(pady=5)
+
+win.mainloop()
+
